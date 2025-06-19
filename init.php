@@ -44,7 +44,7 @@ if (file_exists($sessionHelper)) {
     require_once $sessionHelper;
 } else {
     // Uncomment if you want to handle missing session helper
-    // die("Session helper file is missing.");
+    die("Session helper file is missing.");
 }
 
 // Start a session if not already started

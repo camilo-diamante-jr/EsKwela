@@ -48,9 +48,9 @@ $this->renderView('/portals/partials/layouts/header');
                                         <table id="studentTable" class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th>Student Id</th>
+                                                    <th>LRN No.</th>
                                                     <th>Name</th>
-                                                    <th>Course</th>
+                                                    <th>Section</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
@@ -66,7 +66,19 @@ $this->renderView('/portals/partials/layouts/header');
                                                         <td><?= $studentID ?></td>
                                                         <td><?= $completeName ?></td>
                                                         <td></td>
-                                                        <td></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-title="View student info">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </button>
+                                                                <button type="button" class="btn bg-teal btn-sm" data-bs-toggle="tooltip" data-bs-title="Edit student info">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </button>
+                                                                <button type="button" class="btn bg-red archiveStudentBtn btn-sm" data-bs-toggle="tooltip" data-bs-title="Archive student">
+                                                                    <i class="fa fa-archive"></i>
+                                                                </button>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
