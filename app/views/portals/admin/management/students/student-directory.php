@@ -40,7 +40,9 @@ $this->renderView('/portals/partials/layouts/header');
                                 </ul>
                             </nav>
                         </header>
-                        <div class="card-body">
+                        <section class="card-body">
+                            <?php require_once 'components/buttons-by-grade.php' ?>
+
                             <!-- Tab Content -->
                             <div class="tab-content">
                                 <div class="tab-pane active" id="browseStudent">
@@ -50,8 +52,7 @@ $this->renderView('/portals/partials/layouts/header');
                                                 <tr>
                                                     <th>LRN No.</th>
                                                     <th>Name</th>
-                                                    <th>Section</th>
-                                                    <th>Actions</th>
+                                                    <th>Age</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -66,19 +67,6 @@ $this->renderView('/portals/partials/layouts/header');
                                                         <td><?= $studentID ?></td>
                                                         <td><?= $completeName ?></td>
                                                         <td></td>
-                                                        <td>
-                                                            <div class="btn-group">
-                                                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-title="View student info">
-                                                                    <i class="fa fa-eye"></i>
-                                                                </button>
-                                                                <button type="button" class="btn bg-teal btn-sm" data-bs-toggle="tooltip" data-bs-title="Edit student info">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                                <button type="button" class="btn bg-red archiveStudentBtn btn-sm" data-bs-toggle="tooltip" data-bs-title="Archive student">
-                                                                    <i class="fa fa-archive"></i>
-                                                                </button>
-                                                            </div>
-                                                        </td>
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
@@ -116,7 +104,8 @@ $this->renderView('/portals/partials/layouts/header');
                             </div>
 
 
-                        </div>
+                        </section>
+
 
                     </div>
                 </section>
