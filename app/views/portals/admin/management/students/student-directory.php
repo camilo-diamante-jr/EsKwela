@@ -41,11 +41,12 @@ $this->renderView('/portals/partials/layouts/header');
                             </nav>
                         </header>
                         <section class="card-body">
-                            <?php require_once 'components/buttons-by-grade.php' ?>
 
                             <!-- Tab Content -->
                             <div class="tab-content">
                                 <div class="tab-pane active" id="browseStudent">
+                                    <?php require_once 'components/buttons-by-grade.php' ?>
+
                                     <div class="table-responsive">
                                         <table id="studentTable" class="table table-bordered">
                                             <thead>
@@ -75,23 +76,7 @@ $this->renderView('/portals/partials/layouts/header');
                                 </div>
 
                                 <div class="tab-pane" id="insertStudent">
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <label for="">First name</label>
-                                                <input type="text" class="form-control" name="firstName" />
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="">Middle name</label>
-                                                <input type="text" class="form-control" name="middleName" />
-
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="">Surname name</label>
-                                                <input type="text" class="form-control" name="lastName" />
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <?php require_once 'components/add-new-student.php' ?>
                                 </div>
 
                                 <div class="tab-pane fade" id="importStudent">
