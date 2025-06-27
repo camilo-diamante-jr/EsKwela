@@ -14,8 +14,9 @@ class AuthController extends Controller
         $this->authModel = $this->loadModel("AuthModel");
     }
 
-    public function loginAuthentication()
+    public function viewLogin()
     {
         $this->renderView("/auth/login");
     }
+    public function loginAuthentication() {}
 }

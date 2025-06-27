@@ -1,3 +1,5 @@
+<?php checkSession("Admin"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

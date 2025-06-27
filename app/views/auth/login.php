@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/css/import.css">
+    <script src="/js/jquery-3.7.1.js"></script>
 </head>
 
 <body>
@@ -14,14 +15,16 @@
             <div class="container-fluid d-flex align-items-center justify-content-center vh-100">
                 <div class="w-100 col-md-4 m-auto">
                     <div class="card">
-                        <form id="quickForm" action="/admin/dashboard">
+                        <form id="loginSubmitForm">
                             <div class="card-body">
+                                <h5>EsKwela</h5>
+
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                    <!-- <label for="exampleInputEmail1">Email address</label> -->
+                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required />
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
+                                    <!-- <label for="exampleInputPassword1">Password</label> -->
                                     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                 </div>
                                 <div class="form-group mb-0">
@@ -39,6 +42,8 @@
             </div>
         </section>
     </main>
+
+    <script src="/js/modules/auth/login.js"></script>
 </body>
 
 </html>
