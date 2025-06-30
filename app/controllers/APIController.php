@@ -8,10 +8,9 @@ class APIController extends Controller
 
     public function __construct($pdo)
     {
-        define("MODEL", "Model");
 
         parent::__construct($pdo);
-        $this->sectionModel = $this->loadModel("Section" . MODEL);
+        $this->sectionModel = $this->loadModel("SectionModel");
     }
 
     public function getSectionById()
