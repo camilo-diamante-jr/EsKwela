@@ -7,6 +7,16 @@
     <title>Login</title>
     <link rel="stylesheet" href="/css/import.css">
     <script src="/js/jquery-3.7.1.js"></script>
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <!-- Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+    <!-- Your login.js (make sure it's loaded last) -->
+    <script src="/path/to/login.js"></script>
+
 </head>
 
 <body>

@@ -27,9 +27,9 @@ class AuthController extends Controller
             if (isset($result['success']) && $result['success']) {
                 $_SESSION['user_id'] = $result['user_id'];
                 $_SESSION['email'] = $result['email'];
-                $_SESSION['user_type'] = $result['user_type'];
+                $_SESSION['userType'] = $result['userType'];
 
-                echo json_encode(['success' => true, 'user_type' => $result['user_type']]);
+                echo json_encode(['success' => true, 'userType' => $result['userType']]);
                 exit;
             } else {
 

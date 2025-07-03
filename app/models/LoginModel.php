@@ -38,7 +38,7 @@ class LoginModel
             return [
                 'success' => true,
                 'user_id' => $user['userId'],
-                'user_type' => $user['userType'],
+                'userType' => $user['userType'],
                 'email' => $user['email'],
             ];
         } catch (PDOException $e) {
